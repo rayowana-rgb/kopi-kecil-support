@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex,nofollow">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src https://kvhlrgzgjndecgayyaeb.supabase.co; img-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<title>Aktivasi akun — Kopi Kecil</title>
+<link rel="stylesheet" href="./aktivasi.css">
+<script type="module" src="./aktivasi.js"></script>
+</head>
+<body>
+<main>
+<p class="eyebrow">KOPI KECIL · AKUN PEMAIN</p>
+<h1>Secangkir pertama,<br>akunmu sendiri.</h1>
+<p id="status" role="status" aria-live="polite">Memeriksa tautan aktivasi…</p>
+<section id="welcome" hidden>
+<p>Tautan ini khusus untuk satu pemain yang diundang. Jangan teruskan tautannya kepada orang lain.</p>
+<button id="activate" type="button">Aktifkan akun saya</button>
+</section>
+<form id="password-form" hidden>
+<label>Email akun<input id="email" type="email" autocomplete="username" readonly></label>
+<p>Buat kata sandi <strong>khusus akun game</strong>, bukan kata sandi Gmail. Minimal 12 karakter.</p>
+<label>Kata sandi baru<input id="password" type="password" autocomplete="new-password" minlength="12" maxlength="200" required></label>
+<label>Ulangi kata sandi<input id="confirm-password" type="password" autocomplete="new-password" minlength="12" maxlength="200" required></label>
+<button id="save" type="submit">Simpan kata sandi</button>
+</form>
+<section id="done" hidden>
+<h2>Akun siap dipakai.</h2>
+<ol><li>Buka aplikasi <strong>Kopi Kecil</strong>.</li><li>Pilih <strong>Akun → Masuk dengan email</strong>.</li><li>Gunakan <strong id="login-email"></strong> dan kata sandi yang baru dibuat.</li></ol>
+<p>Untuk membawa kedai yang sudah dimainkan, buka <strong>Kelola akun &amp; cadangan → Pindahkan kedai tanpa akun ke akun ini…</strong> di aplikasi dan periksa konfirmasinya.</p>
+</section>
+<p class="note">Halaman ini hanya mengaktifkan akun, tidak membaca atau mengganti progres permainan di HP. Jangan uninstall atau hapus data aplikasi.</p>
+<p class="support">Tautan kedaluwarsa atau lupa kata sandi? Minta tautan baru kepada pengelola Kopi Kecil. Jangan kirim kata sandimu.</p>
+<noscript>Aktifkan JavaScript pada browser untuk melanjutkan aktivasi.</noscript>
+</main>
+</body>
+</html>
